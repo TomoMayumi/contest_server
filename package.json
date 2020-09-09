@@ -1,0 +1,26 @@
+{
+  "name": "contest_server",
+  "version": "1.0.0",
+  "description": "programming contest server",
+  "main": "index.js",
+  "scripts": {
+    "devstart": "nodemon ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomoMayumi/contest_server.git"
+  },
+  "author": "TomoMayumi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomoMayumi/contest_server/issues"
+  },
+  "homepage": "https://github.com/TomoMayumi/contest_server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
