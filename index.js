@@ -6,7 +6,7 @@ app.listen(3000, ()=>{
   console.log('Example app listening on port 3000!');
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.use((req, res)=>{
   res.sendStatus(404);
