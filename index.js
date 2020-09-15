@@ -28,11 +28,14 @@ app.post('/api',(req,res,next)=>{
       const result = execSync(`ruby ${file}`);
       console.log({result:result.toString()});
     }catch(err){
+      console.log("runtime error");
       console.log({stderr:err.stderr.toString(),stdout:err.stdout.toString()});
     }
   }catch(err){
+    console.log("compile error");
     console.log({stderr:err.stderr.toString(),stdout:err.stdout.toString()});
   }
+  console.log("end");
   fs.unlinkSync(file);
   res.redirect('/static');
 });
