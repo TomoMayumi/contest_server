@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/TomoMayumi/contest_server#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
